@@ -3,76 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim Mobil Uyumlu Sitem</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            font-size: 2.5rem; /* büyük ekranda büyük, mobilde küçülür */
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-
-        img {
-            max-width: 100%; /* kapsayıcıyı aşmaz */
-            height: auto;
-            border-radius: 10px;
-        }
-
-        /* Media Queries: tablet ve telefon için */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 0.9rem;
-            }
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Durendus Press</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#production">Üretim</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Merhaba Dünya 🌍</h1>
-    <p>Bu sayfa hem bilgisayarda hem mobilde güzel görünüyor!</p>
+    <section id="home">
+        <h1>Durendus Press</h1>
+        <p>Form ve fonksiyonun mükemmel uyumu</p>
+    </section>
 
-    <!-- Örnek görsel -->
-    <img src="https://via.placeholder.com/400x200.png?text=Merhaba+Dunya" alt="Merhaba Dünya">
+    <section id="products">
+        <h2>Ürünlerimiz</h2>
+        <div class="product">
+            <h3>DPS Serisi</h3>
+            <p>Yüksek performanslı düzeltme presleri</p>
+        </div>
+        <div class="product">
+            <h3>DHD Serisi</h3>
+            <p>Derin çekme presleri</p>
+        </div>
+        <!-- Diğer ürünler burada listelenebilir -->
+    </section>
 
-    <br><br>
-    <a href="#" class="button">Butona Tıkla</a>
+    <section id="production">
+        <h2>Üretim Süreci</h2>
+        <p>Kaliteli üretim ve mühendislik hizmetleri</p>
+    </section>
 
+    <section id="contact">
+        <h2>İletişim</h2>
+        <p>Email: info@durendus.com</p>
+        <p>Telefon: +90 332 501 4308</p>
+        <p>Adres: 408. Sokak, No: 5/1 C</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Durendus. Tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
