@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Benim İlk Sitem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Mobil Uyumlu Sitem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            font-size: 2.5rem; /* büyük ekranda büyük, mobilde küçülür */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%; /* kapsayıcıyı aşmaz */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Media Queries: tablet ve telefon için */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
-    <h1>Merhaba Ayşe Severler! Sorry, WHO? Doğru duydunuz.. 🌍</h1>
-    <p>Bu, benim ilk web site deneyimim! Biliyorum yazılımcı falan değilim ama n'apalım.</p>
+<body>
+
+    <h1>Merhaba Dünya 🌍</h1>
+    <p>Bu sayfa hem bilgisayarda hem mobilde güzel görünüyor!</p>
+
+    <!-- Örnek görsel -->
+    <img src="https://via.placeholder.com/400x200.png?text=Merhaba+Dunya" alt="Merhaba Dünya">
+
+    <br><br>
+    <a href="#" class="button">Butona Tıkla</a>
+
 </body>
 </html>
